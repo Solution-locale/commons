@@ -6,6 +6,7 @@ use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Solutionlocale\Commons\Filters\Filterable;
+use Solutionlocale\Commons\Scopes\UltraLocalScope;
 
 class Place extends Model
 {
@@ -25,6 +26,15 @@ class Place extends Model
     protected static $logName = 'moderation';
     protected static $logOnlyDirty = true;
     protected static $submitEmptyLogs = false;
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        if (config('soloc-commons.ultra-local.enabled')) {
+            static::addGlobalScope(new \Solutionlocale\Commons\Scopes\UltraLocalScope);
+        }
+    }
 
     /**
      * Relationships

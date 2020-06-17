@@ -2,8 +2,24 @@
 
 ## Installation
 
-1. Require package
-2. Add an entry to `config/database.php` connections like so:
+### Require package (required)
+
+This package is not distributed with Packagist. To use it, you will need to add this repository as a source in your `composer.json` file like so:
+
+```json
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/Solution-locale/commons"
+    }
+],
+```
+
+When it's done, add `"solutionlocale/commons": "^1.0"` to `required` in your `composer.json` file and update.
+
+### Database (required)
+
+This package assume that you have access to the main Solution Local database and will expect a database connection named `solutionlocale`in your `config/database.php` file. Those are the parameters for this connection:
 
 ```php
 'solutionlocale' => [
@@ -25,4 +41,14 @@
         PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
     ]) : [],
 ],
+```
+
+### "Ultra local" setup (optional)
+
+If you wish to use the commons in an "ultra local" setup (meaning the site will only operate within specified RCMs), you will have to enable it in your environment file like this:
+
+```
+SOLUTION_LOCALE_ULTRA_ENABLED=true
+# Below is the comma separated list of RCM IDs you want to show in this instance
+SOLUTION_LOCALE_ULTRA_RCM_IDS="22,25"
 ```
