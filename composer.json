@@ -9,7 +9,12 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {},
+    "require": {
+        "spatie/laravel-activitylog": "^3.14",
+        "algolia/scout-extended": "^1.9",
+        "spatie/laravel-permission": "^3.11",
+        "alexpechkarev/google-maps": "7.0"
+    },
     "autoload": {
         "psr-4": {
             "Solutionlocale\\Commons\\": "src/"

@@ -6,7 +6,14 @@ return [
         'rcm_ids' => explode(',', env('SOLUTION_LOCALE_ULTRA_RCM_IDS', '')),
         'region_ids' => explode(',', env('SOLUTION_LOCALE_ULTRA_REGION_IDS', '')),
     ],
-    'database' => [
-        'connection' => env('SOLUTION_LOCALE_DB_CONNECTION', 'mysql'),
+
+    'services' => [
+        'google' => [
+            'places' => [
+                'api' => [
+                    'key' => env('GOOGLE_PLACES_API_KEY', false)
+                ],
+            ],
+        ],
     ]
 ];
