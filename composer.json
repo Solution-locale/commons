@@ -1,0 +1,25 @@
+{
+    "name": "solutionlocale/commons",
+    "description": "Reusable parts of Solution Locale's platforms.",
+    "authors": [
+        {
+            "name": "Jean-Philippe Murray",
+            "email": "jp@atomescroch.us"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Solutionlocale\\Commons\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Solutionlocale\\Commons\\Provider\\CommonsServiceProvider"
+            ]
+        }
+    }
+}
