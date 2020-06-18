@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - June 18 2020
+
+- Added relationship method to link a RMC to a place.
+
 ## 1.1.0 - June 17 2020
 
 - Added scoping for ultra local sites, with appropriate trigger for enabling it.

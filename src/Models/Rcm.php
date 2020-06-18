@@ -13,6 +13,11 @@ class Rcm extends Model
         'name',
     ];
 
+    public function places()
+    {
+        return $this->hasMany(\Solutionlocale\Commons\Models\Place::class);
+    }
+
     public function region()
     {
         return $this->belongsTo(\Solutionlocale\Commons\Models\Region::class);
