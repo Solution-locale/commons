@@ -1,6 +1,6 @@
 # Changelog
 
-## Next
+## 1.3.0 - June 25 2020
 
 - Added a `soloc-commons.ultra-local.region_ids` config value linked to a `SOLUTION_LOCALE_ULTRA_REGION_IDS` environment variable.
 
