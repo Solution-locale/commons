@@ -1,5 +1,9 @@
 # Changelog
 
+## Next
+
+- Added a `soloc-commons.ultra-local.region_ids` config value linked to a `SOLUTION_LOCALE_ULTRA_REGION_IDS` environment variable.
+
 ## 1.2.0 - June 18 2020
 
 - Added relationship method to link a RMC to a place.
