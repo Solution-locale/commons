@@ -1,6 +1,6 @@
 # Changelog
 
-## Next
+## 2.1.0 - June 25 2020
 
 - Added requests to validate places in public registrations / addition of places.
 - Added requests to validate places for user registration that occurs on ultra locale versions.
