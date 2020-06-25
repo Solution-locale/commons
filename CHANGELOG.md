@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.1 - June 25 2020
+
+- Added postal code validation package.
+- Added phone validation package.
+
 ## 2.1.0 - June 25 2020
 
 - Added requests to validate places in public registrations / addition of places.
