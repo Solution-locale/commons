@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.0 - June 25 2020
+
+- Added requests to validate places in public registrations / addition of places.
+- Added requests to validate places for user registration that occurs on ultra locale versions.
+
 ## 2.0.0 - June 25 2020
 
 - Changed name of scope applied to Place model to better differentiate with other new scopes.
