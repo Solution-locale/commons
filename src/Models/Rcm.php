@@ -13,6 +13,15 @@ class Rcm extends Model
         'name',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        if (config('soloc-commons.ultra-local.enabled')) {
+            static::addGlobalScope(new \Solutionlocale\Commons\Scopes\UltraLocalRCMsScope);
+        }
+    }
+
     public function places()
     {
         return $this->hasMany(\Solutionlocale\Commons\Models\Place::class);

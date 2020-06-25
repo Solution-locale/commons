@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
 
-class UltraLocalScope implements Scope
+class UltraLocalRCMsScope implements Scope
 {
     /**
      * Apply the scope to a given Eloquent query builder.
@@ -17,6 +17,6 @@ class UltraLocalScope implements Scope
      */
     public function apply(Builder $builder, Model $model)
     {
-        $builder->whereIn('rcm_id', config('soloc-commons.ultra-local.rcm_ids'));
+        $builder->whereIn('id', config('soloc-commons.ultra-local.rcm_ids'));
     }
 }

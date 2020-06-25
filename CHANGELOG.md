@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0 - June 25 2020
+
+- Changed name of scope applied to Place model to better differentiate with other new scopes.
+- Scopes RCM and Region to the value set in config / env if ultra locale version is enabled.
+
 ## 1.3.0 - June 25 2020
 
 - Added a `soloc-commons.ultra-local.region_ids` config value linked to a `SOLUTION_LOCALE_ULTRA_REGION_IDS` environment variable.

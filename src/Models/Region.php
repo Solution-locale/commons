@@ -12,6 +12,15 @@ class Region extends Model
         'name',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        if (config('soloc-commons.ultra-local.enabled')) {
+            static::addGlobalScope(new \Solutionlocale\Commons\Scopes\UltraLocalRegionsScope);
+        }
+    }
+
     public function places()
     {
         return $this->hasMany(\Solutionlocale\Commons\Models\Place::class);
