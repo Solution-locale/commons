@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0 - June 29 2020
+
+- User model will default its connection to "mysql" as per config, but this value can be changed using and environment variable.
+
 ## 2.1.1 - June 25 2020
 
 - Added postal code validation package.

@@ -20,7 +20,10 @@ class User extends Authenticatable
     use HasRoles;
     use CausesActivity;
 
-    protected $connection = 'solutionlocale';
+    public function __construct()
+    {
+        $this->connection = config("soloc-commons.users.db-connection");
+    }
 
     /**
      * The attributes that are mass assignable.
