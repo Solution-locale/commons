@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'users' => [
+        'db-connection' => env('SOLUTION_LOCALE_USER_CONNECTION', "mysql"),
+    ],
+
     'ultra-local' => [
         'enabled' => env('SOLUTION_LOCALE_ULTRA_ENABLED', false),
         'rcm_ids' => explode(',', env('SOLUTION_LOCALE_ULTRA_RCM_IDS', '')),
