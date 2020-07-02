@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.0 - July 2 2020
+
+- User request will not enforce user registration validation if someone is auth'd, enabling the use of the registration workflow of new places for registered users on Ultra.
+
 ## 2.2.0 - June 29 2020
 
 - User model will default its connection to "mysql" as per config, but this value can be changed using and environment variable.
