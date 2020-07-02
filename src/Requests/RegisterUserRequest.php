@@ -23,11 +23,15 @@ class RegisterUserRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'user_name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ];
+        if (!Auth::check()) {
+            return [
+                'user_name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+                'password' => ['required', 'string', 'min:8', 'confirmed'],
+            ];
+        } else {
+            return [];
+        }
     }
 
     public function messages()
