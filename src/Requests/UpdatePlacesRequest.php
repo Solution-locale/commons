@@ -4,7 +4,7 @@ namespace Solutionlocale\Commons\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StorePlacesRequest extends FormRequest
+class UpdatePlacesRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -67,9 +67,9 @@ class StorePlacesRequest extends FormRequest
                 },
             ],
             'rcm_id' => ['required'],
-            'photoPrincipale' => ['required', 'file'],
-            'photoAdditionnelle1' => ['file'],
-            'photoAdditionnelle2' => ['file'],
+            // 'photoPrincipale' => ['required', 'file'],
+            // 'photoAdditionnelle1' => ['file'],
+            // 'photoAdditionnelle2' => ['file'],
         ];
     }
 
