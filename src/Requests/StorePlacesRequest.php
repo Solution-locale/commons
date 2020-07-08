@@ -67,9 +67,6 @@ class StorePlacesRequest extends FormRequest
                 },
             ],
             'rcm_id' => ['required'],
-            'photoPrincipale' => ['required', 'file'],
-            'photoAdditionnelle1' => ['file'],
-            'photoAdditionnelle2' => ['file'],
         ];
     }
 
