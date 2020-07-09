@@ -2,6 +2,7 @@
 
 namespace Solutionlocale\Commons\Requests;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RegisterUserRequest extends FormRequest
