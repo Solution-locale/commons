@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.0 - October 25 2020
+
+- Updated dependencies to support Laravel 8.
+
 ## 2.3.0 - July 2 2020
 
 - User request will not enforce user registration validation if someone is auth'd, enabling the use of the registration workflow of new places for registered users on Ultra.
