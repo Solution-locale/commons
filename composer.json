@@ -10,12 +10,12 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "spatie/laravel-activitylog": "^3.14",
-    "algolia/scout-extended": "^1.9",
-    "spatie/laravel-permission": "^3.11",
-    "alexpechkarev/google-maps": "7.0",
-    "axlon/laravel-postal-code-validation": "^2.1",
-    "propaganistas/laravel-phone": "^4.2"
+    "spatie/laravel-activitylog": "^3.16",
+    "algolia/scout-extended": "^1.10",
+    "spatie/laravel-permission": "^3.17",
+    "alexpechkarev/google-maps": "8.0",
+    "axlon/laravel-postal-code-validation": "^3.1",
+    "propaganistas/laravel-phone": "^4.2.5"
   },
   "autoload": {
     "psr-4": {
